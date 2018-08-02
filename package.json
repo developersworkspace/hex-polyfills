@@ -1,0 +1,23 @@
+{
+  "name": "hex-polyfills",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "npm run build-compile & npm run build-bundle",
+    "build-compile": "tsc",
+    "build-bundle": "browserify ./dist/main.js -o ./dist/main.bundle.js -s HexPolyfills",
+    "start": "npm run build & node ./dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developersworkspace/hex-polyfills.git"
+  },
+  "author": "Barend Erasmus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/developersworkspace/hex-polyfills/issues"
+  },
+  "homepage": "https://github.com/developersworkspace/hex-polyfills#readme"
+}
